@@ -39,7 +39,7 @@ def parse_literal(data):
         not_last = int(next(iterator))
         for _ in range(4):
             literal += next(iterator)
-        return int(literal, 2)
+    return int(literal, 2)
 
 def get_packet_length(data):
     version, opcode, length_type_id, length = parse_header(data)
